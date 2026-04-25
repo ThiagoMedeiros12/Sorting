@@ -1,17 +1,17 @@
 import random
 
 
-def num_generate():
-    return random.randint(1, 100)
+def num_generate(n):
+    return random.randint(1, n)
 
 
-def generate_100():
-    lista_100 = []
-    for _ in range(100):
-        new_value = num_generate()
-        if new_value not in lista_100:
-            lista_100.append(new_value)
-    return lista_100
+def generate_100(n=100):
+    lista = []
+    for _ in range(n):
+        new_value = num_generate(n)
+        if new_value not in lista:
+            lista.append(new_value)
+    return lista
 
 
 def bubble_sort(lista):

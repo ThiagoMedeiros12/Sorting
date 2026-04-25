@@ -1,7 +1,8 @@
-from scripts.script import *
+from GUI.gui import MainApp
+
 
 def main():
-    print(bubble_sort(generate_100()))
+    MainApp()
 
 
 if __name__ == "__main__":
