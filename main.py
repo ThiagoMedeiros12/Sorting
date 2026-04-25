@@ -1,4 +1,4 @@
-from script import *
+from scripts.script import *
 
 def main():
     print(bubble_sort(generate_100()))
